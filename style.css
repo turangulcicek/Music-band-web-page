@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    background-color: none;
+}
+
+body {
+    background-image: linear-gradient(rgba(32, 32, 32, 0.4), rgba(180, 15, 111, 0.3));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.img_deep {
+    background-color: none;
+    margin-top: 40px;
+}
+
+.header {
+    background-color: none;
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.header p {
+    padding: 10px 40px;
+    border: none;
+    margin: 10px 50px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    text-shadow: 0 0 5px rgba(134, 19, 228, 0.5);
+    /* yazılara gölge efekti verir* 4 değer var yatay dikey bulanıkık renk/ */
+    transition: all;
+    transition-duration: 0.3s;
+    /*transition-delay: 1s; özelliklerin geç gelmesine neden olur*/
+    /*transition-timing-function: ease-in;  geçişin nasıl olacağına bir örnek*/
+    /*ransition-timing-function: cubic-bezier(.17,.67,.96,.24); geçişi cubic bezier sitesinden ayarlayıp 
+    değerleri yapıtırabiliriz*/
+
+}
+
+.header p:hover {
+    background-color: none;
+    scale: 140%;
+    border: none;
+    color: rgb(109, 5, 5);
+    font-weight: bolder;
+}
+
+.lorem p {
+    line-height: 2rem;
+    /*white-space: pre; /* html de yazıldığı gibi görünür*/
+    /* white-space: nowrap;  direkt tek satır halinde yazar*/
+    /*white-space: pre-wrap; aynı düzeni korur ama satır taşıyorsa alta atar*/
+    /*white-space: pre-line; yeni satır varsa aşağı indiriyor*/
+    /*word-break: break-all; eğer bütün kelimler birşelik yazılmışsa onları ayırır kötü görünmemesi için*/
+}
+
+.lorem h1 {
+    line-height: 2rem;
+}
+
+
+/*
+.asd{
+   
+    background-color: rgb(147, 147, 241);
+    word-break: break-all;
+    hyphens: auto; kelimeler sığmıyorsa ayırıp aşağı atıyor
+    width: 50px;
+    border-color: green;
+}*/
+
+.bg1 {
+    height: 400px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0849/9992/t/17/assets/slide-3-image.jpg?v=40828333383371371001670513511);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    margin-top: 100px;
+    
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+}
+
+p{
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: justify;
+
+}
+.text {
+    line-height: 2em;
+}
+
+/* background: padding-box center/cover green url(indir.jpg); Tek satırda bu şekilde kullanılabilir background*/
+
+/*
+.lorem{
+    column-count: 3;  sütunu belirtilen sayıya böler
+    column-width:300px her kolon 300 piksel olacak şekilde böler
+    column-rule:  #ccc 1px;
+    column-gap: 10px;}
+.lorem h1{
+    column-span: all; /* baslığı bütün kolonlara atar*/
+}
+
+/*
+@font-face {
+    font-family: 'facebook';
+    src: url('font/facebook.eot?37527027');
+    src: url('/font/facebook.eot?37527027#iefix') format('embedded-opentype'),
+         url('/font/facebook.woff2?37527027') format('woff2'),
+         url('/font/facebook.woff?37527027') format('woff'),
+         url('/font/facebook.ttf?37527027') format('truetype'),
+         url('/font/facebook.svg?37527027#facebook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /*
+  [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "facebook";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+  
+    display: inline-block;
+    text-decoration: inherit;
+ 
+    font-variant: normal;
+    text-transform: none;
+  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Uncomment for 3D effect */
+/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+
+/*
+  .icon-facebook:before { content: '\f09a'; } /* '' */
+/*
+  .icon-facebook:before{
+    padding: 10px 40px;
+    border: none;
+    margin: 10px 50px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    text-shadow: 0 0 5px rgba(134, 19, 228, 0.5); /* yazılara gölge efekti verir* 4 değer var yatay dikey bulanıkık renk/ 
+    transition: all;
+    transition-duration: 0.3s;
+  }*/
